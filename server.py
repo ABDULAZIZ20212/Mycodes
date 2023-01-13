@@ -16,6 +16,4 @@ def post_snetiment():
     else:
         return "Error: Your request is missing a JSON body with text field", 400
 
-
-if __name__ == '__main__':
-    api.run(host='0.0.0.0', port= os.environ.get('PORT') or 3000)
+var port = process.env.Port || 8080
