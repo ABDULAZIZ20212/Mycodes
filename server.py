@@ -5,7 +5,7 @@ import sentiment
 
 api = Flask(__name__)
 
-@api.route('/sentiment', methods=['POST'])
+@api.route('/sentiment', methods=['GET', POST'])
 def post_snetiment():
     try:
         data = json.loads(request.data)
@@ -18,4 +18,7 @@ def post_snetiment():
 
 
 if __name__ == '__main__':
-    api.run(host='0.0.0.0', PORT= os.environ.get('PORT') or 3000)
+    api.run(host='0.0.0.0', port= process.env.PORT.get('PORT') or 3000)
+var port = process.env.PORT || 8080;
+api.listen(port);
+exports = app;
