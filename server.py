@@ -18,4 +18,4 @@ def post_snetiment():
 
 
 if __name__ == '__main__':
-    api.run(host='0.0.0.0', port= os.environ.get('PORT') or 3000)
+    api.run(host='0.0.0.0', process.env.PORT or 3000)
