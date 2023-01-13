@@ -1,5 +1,4 @@
 venv
-web: gunicorn app:app
 .env
 staticfiles
 __pycache__/
