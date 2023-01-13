@@ -15,5 +15,11 @@ def post_snetiment():
         return jsonify(sentiment.analyze(data['text']))
     else:
         return "Error: Your request is missing a JSON body with text field", 400
+    
+if __name__ == '__main__':
+    api.run(port = process.env.Port || 8080
+        app.listen(port, ()=>{
+           console.log("it is working");
+                      })
+                       )
 
-var port = process.env.Port || 8080
