@@ -1,5 +1,8 @@
 venv
 .env
+git add .
+git commit -m "Set up Staticman v3 for deployment to Heroku"
+git push heroku production:master
 staticfiles
 __pycache__/
 *.pyc
